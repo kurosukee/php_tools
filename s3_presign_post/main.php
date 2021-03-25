@@ -38,7 +38,7 @@ function getPostsForm($s3Client) {
     $options = [
         ['acl' => 'public-read'],
         ['bucket' => BUCKET_NAME],
-        ['starts-with', '$key', 'hoge/'],
+        ['starts-with', '$key', ''],
     ];
 
     $expires = '+5 minutes';
